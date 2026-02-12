@@ -1,0 +1,394 @@
+/* styles/estilos.css — Libro digital bilingüe */
+
+/* Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #2f6f73;
+
+  --paper: #f7f2e8;
+  --paper2: #ffffff;
+
+  --ink: #2b2b2b;
+  --muted: #5d7f7e;
+  --title: #355c5b;
+
+  --accent: #f2c777;
+
+  --radius: 20px;
+  --radiusInner: 15px;
+
+  --shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+
+  --gap: 30px;
+}
+
+/* Fondo */
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  font-family: "Nunito", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--ink);
+}
+
+/* Contenedor libro */
+.book {
+  max-width: 980px;
+  margin: 40px auto;
+  background: var(--paper);
+  border-radius: var(--radius);
+  padding: 42px;
+  box-shadow: var(--shadow);
+}
+
+/* Titulares */
+h1 {
+  font-family: "Baloo 2", system-ui, sans-serif;
+  text-align: center;
+  font-size: 56px;
+  color: var(--title);
+  margin: 0 0 6px;
+  letter-spacing: 0.4px;
+}
+
+h2 {
+  font-family: "Baloo 2", system-ui, sans-serif;
+  text-align: center;
+  font-style: italic;
+  color: var(--muted);
+  margin: 0;
+}
+
+/* Página (layout) */
+.page {
+  display: flex;
+  gap: var(--gap);
+  margin-top: 28px;
+  align-items: stretch;
+
+  /* Animación */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.page.fade-out {
+  opacity: 0;
+  transform: translateX(-10px);
+}
+
+.page.fade-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Caja de imagen */
+.image-box {
+  width: 45%;
+  border: 2px dashed #b5cfcf;
+  border-radius: var(--radiusInner);
+  padding: 14px;
+  text-align: center;
+  color: #777;
+  background: rgba(255, 255, 255, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-box img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: var(--radiusInner);
+  display: block;
+}
+
+/* Caja de texto */
+.text-box {
+  width: 55%;
+  background: var(--paper2);
+  border-radius: var(--radiusInner);
+  padding: 26px 28px;
+}
+
+.text-box h3 {
+  font-family: "Baloo 2", system-ui, sans-serif;
+  margin: 0 0 10px;
+  color: var(--title);
+  font-size: 26px;
+}
+
+/* Bilingüe */
+.texto-bilingue p {
+  margin: 0 0 12px;
+  line-height: 1.75;
+  font-size: 18px;
+  color: var(--ink);
+}
+
+#texto-es {
+  color: var(--muted);
+}
+
+/* Separador idiomas */
+.texto-bilingue hr {
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  margin: 14px 0;
+}
+
+/* Botones cambiar idioma */
+.lang-toggle {
+  text-align: center;
+  margin-top: 18px;
+  margin-bottom: 6px;
+}
+
+.lang-toggle button {
+  margin: 6px 6px;
+}
+
+/* Botones nav */
+.buttons {
+  text-align: center;
+  margin-top: 18px;
+}
+
+/* Estilo botones general */
+/* ✅ Para que se vean bien las banderas (Windows/Edge) */
+button {
+  background: var(--accent);
+  border: none;
+  padding: 12px 20px;
+  margin: 0 10px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 800;
+ font-family: "Nunito", "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", system-ui, sans-serif;
+  transition: transform 0.06s ease, filter 0.2s ease;
+}
+button:hover {
+  filter: brightness(1.03);
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  filter: grayscale(0.3);
+}
+
+button:focus-visible {
+  outline: 3px solid rgba(46, 111, 115, 0.55);
+  outline-offset: 3px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .book {
+    margin: 20px;
+    padding: 22px;
+  }
+
+  h1 {
+    font-size: 42px;
+  }
+
+  .page {
+    flex-direction: column;
+  }
+
+  .image-box,
+  .text-box {
+    width: 100%;
+  }
+
+  .image-box img {
+    height: 220px;
+  }
+}
+/* ====== PORTADA ====== */
+.hidden { display: none !important; }
+
+.cover{
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 30px;
+}
+
+.cover-card{
+  width: min(900px, 100%);
+  background: #f7f2e8;
+  border-radius: 20px;
+  padding: 34px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.2);
+  text-align: center;
+}
+
+.cover-title{
+  font-family: "Baloo 2", system-ui, sans-serif;
+  font-size: 56px;
+  color: #355c5b;
+  margin: 0 0 6px;
+}
+
+.cover-subtitle{
+  font-family: "Baloo 2", system-ui, sans-serif;
+  font-style: italic;
+  color: #5d7f7e;
+  margin: 0 0 18px;
+  font-size: 22px;
+}
+
+.cover-image{
+  margin: 18px auto 22px;
+  width: min(520px, 100%);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.cover-image img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.cover-button{
+  background: #f2c777;
+  border: none;
+  padding: 14px 22px;
+  border-radius: 22px;
+  cursor: pointer;
+  font-weight: 800;
+ }
+
+/* Portada en móvil */
+@media (max-width: 600px){
+  .cover-title{ font-size: 40px; }
+  .cover-image img{ height: 220px; }
+}
+#page-indicator{
+  font-family: "Baloo 2", system-ui, sans-serif;
+  letter-spacing: 0.3px;
+  text-align: center;
+  margin: 10px 0;
+  color: #5d7f7e;
+  font-weight: 600;
+
+}
+.lang-toggle button.active {
+  outline: 3px solid rgba(46, 111, 115, 0.7);
+  outline-offset: 3px;
+  transform: scale(1.05);
+}
+.lang-toggle button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 15px;
+}
+
+.lang-toggle button span {
+  font-size: 18px;
+}
+.cover-actions{
+  display:flex;
+  justify-content:center;
+  gap:12px;
+  margin-top:10px;
+  flex-wrap:wrap;
+}
+.reset-msg{
+  margin: 10px 0 0;
+  text-align: center;
+  color: var(--title);
+  font-weight: 700;
+  opacity: 0;
+  transform: translateY(-4px);
+  transition: opacity .2s ease, transform .2s ease;
+}
+
+.reset-msg.show{
+  opacity: 1;
+  transform: translateY(0);
+}
+/* ====== MODO OSCURO ====== */
+body.dark {
+  --bg: #0f2f33;
+  --paper: #162f33;
+  --paper2: #1d3a3f;
+
+  --ink: #f1f5f5;
+  --muted: #b7d0cf;
+  --title: #d7f0ee;
+
+  --accent: #f2c777;
+}
+
+/* detalles para que se vea bien en dark */
+body.dark .image-box {
+  border-color: rgba(183, 208, 207, 0.55);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+body.dark .texto-bilingue hr {
+  border-top-color: rgba(255, 255, 255, 0.18);
+}
+.cover-author {
+  margin-top: 6px;
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--ink-soft);
+}
+.cover-credits {
+  margin-top: 4px;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--muted);
+  text-align: center;
+}
+/* ====== CRÉDITOS (footer) ====== */
+.credits{
+  margin-top: 18px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.credits strong{
+  color: var(--title);
+}
+/* Colores bilingües en la portada */
+.cover-title {
+  color: #2f5d5a; /* Español: verde principal */
+}
+
+.cover-title-en {
+  display: block;
+  font-size: 0.6em;
+  color: #1f6feb; /* Inglés: azul */
+  margin-top: 4px;
+}
+
+.cover-subtitle {
+  color: #3a7f7a; /* Español */
+}
+
+.cover-subtitle-en {
+  display: block;
+  font-size: 0.9em;
+  color: #4fa3ff; /* Inglés más claro */
+  opacity: 0.9;
+}
+
