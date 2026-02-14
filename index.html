@@ -6,58 +6,59 @@
   <title>Los Ángeles Están Jugando</title>
 
   <!-- Manifest PWA -->
-  <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#2f6f73">
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#2f6f73" />
 
   <!-- Fuentes -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;800&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;800&family=Nunito:wght@400;600;800&display=swap"
+    rel="stylesheet"
+  />
 
   <!-- CSS -->
   <link rel="stylesheet" href="styles/estilos.css" />
 </head>
 
 <body>
-
   <!-- ✅ PORTADA -->
   <section class="cover" id="cover">
-  <div class="cover-card">
-    <h1 class="cover-title">
-  Los Ángeles Están Jugando  
-  <br>
-  <span class="cover-title-en">The Angels Are Playing</span>
-</h1>
+    <div class="cover-card">
+      <h1 class="cover-title">
+        Los Ángeles Están Jugando <br />
+        <span class="cover-title-en">The Angels Are Playing</span>
+      </h1>
 
-<p class="cover-subtitle">
-  Cuentos infantiles  
-  <br>
-  <span class="cover-subtitle-en">Children’s stories</span>
-</p>
+      <p class="cover-subtitle">
+        Cuentos infantiles <br />
+        <span class="cover-subtitle-en">Children’s stories</span>
+      </p>
 
-<p class="cover-author">Por: Maricela Duque</p>
-<p class="cover-credits">Ilustraciones: creadas con ayuda de IA a partir de fotografías de la autora.</p>
+      <p class="cover-author">Por: Maricela Duque</p>
+      <p class="cover-credits">Ilustraciones: creadas con ayuda de IA a partir de fotografías de la autora.</p>
 
+      <div class="cover-image">
+        <img
+          src="images/page1.jpg"
+          alt="Ilustración de portada del cuento Los Ángeles Están Jugando"
+        />
+      </div>
 
-    <div class="cover-image">
-      <img src="images/page1.jpg" alt="Ilustración de portada del cuento Los Ángeles Están Jugando">
+      <div class="cover-actions">
+        <button id="btn-start" type="button" class="cover-button">📖 Empezar a leer</button>
+        <button id="btn-reset" type="button" class="cover-button">🔄 Reiniciar</button>
+        <button id="btn-cover-audio-es" type="button" class="cover-button">🔊 Título en Español</button>
+        <button id="btn-cover-audio-en" type="button" class="cover-button">🔊 Title in English</button>
+      </div>
+
+      <p id="reset-msg" class="reset-msg" aria-live="polite"></p>
     </div>
 
- <div class="cover-actions">
-  <button id="btn-start" type="button" class="cover-button">📖 Empezar a leer</button>
-  <button id="btn-reset" type="button" class="cover-button">🔄 Reiniciar</button>
-  <button id="btn-cover-audio-es" type="button" class="cover-button">🔊 Título en Español</button>
-  <button id="btn-cover-audio-en" type="button" class="cover-button">🔊 Title in English</button>
-</div>
-
-    <p id="reset-msg" class="reset-msg" aria-live="polite"></p>
-  </div>
-<!-- ✅ Audios portada -->
-<audio id="cover-audio-es" src="sounds/cover_es.mp3" preload="auto"></audio>
-<audio id="cover-audio-en" src="sounds/cover_en.mp3" preload="auto"></audio>
-
-
-</section>
+    <!-- ✅ Audios portada -->
+    <audio id="cover-audio-es" src="sounds/cover_es.mp3" preload="auto"></audio>
+    <audio id="cover-audio-en" src="sounds/cover_en.mp3" preload="auto"></audio>
+  </section>
 
   <!-- ✅ LIBRO (empieza oculto) -->
   <div class="book hidden" id="book">
@@ -79,56 +80,186 @@
         </div>
       </div>
     </div>
-<p id="page-indicator">Página 1 de 10</p>
-  <div class="lang-toggle">
-  <button id="btn-both" type="button">🌎 EN + ES</button>
-  <button id="btn-en" type="button">🇺🇸 EN</button>
-  <button id="btn-es" type="button">🇪🇸 ES</button>
-</div>
 
- <div class="buttons">
-  <button id="btn-prev" type="button">⬅ Página anterior</button>
-  <button id="btn-next" type="button">Página siguiente ➡</button>
-  <button id="btn-fullscreen" type="button">⛶ Pantalla completa</button>
-  <button id="btn-theme" type="button">🌙 Modo oscuro</button>
-  <button id="btn-audio" type="button">🔊 Audio</button>
-  <button id="btn-music" type="button">🎵 Música</button>
-</div>
+    <p id="page-indicator">Página 1</p>
+
+    <div class="lang-toggle">
+      <button id="btn-both" type="button">🌎 EN + ES</button>
+      <button id="btn-en" type="button">🇺🇸 EN</button>
+      <button id="btn-es" type="button">🇪🇸 ES</button>
+    </div>
+
+    <div class="buttons">
+      <button id="btn-prev" type="button">⬅ Página anterior</button>
+      <button id="btn-next" type="button">Página siguiente ➡</button>
+      <button id="btn-fullscreen" type="button">⛶ Pantalla completa</button>
+      <button id="btn-theme" type="button">🌙 Modo oscuro</button>
+      <button id="btn-audio" type="button">🔊 Audio</button>
+      <button id="btn-music" type="button">🎵 Música</button>
+    </div>
   </div>
-    <!-- ✅ Sonido de pasar página -->
-       <!-- ✅ CRÉDITOS -->
+
+  <!-- ✅ CRÉDITOS -->
   <footer class="credits">
-  <p><strong>Autora:</strong> Maricela Duque</p>
-  <p><strong>Ilustraciones:</strong> creadas con ayuda de IA a partir de fotografías de la autora.</p>
-  <p class="copyright">© 2026 Maricela Duque. Todos los derechos reservados.</p>
+    <p><strong>Autora:</strong> Maricela Duque</p>
+    <p><strong>Ilustraciones:</strong> creadas con ayuda de IA a partir de fotografías de la autora.</p>
+    <p class="copyright">© 2026 Maricela Duque. Todos los derechos reservados.</p>
+    <p><strong>Música de fondo:</strong> “Floating Cities” – Kevin MacLeod (incompetech.com)</p>
+    <p>
+      Licencia:
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">
+        Creative Commons Attribution 4.0
+      </a>
+    </p>
+  </footer>
 
-  <p><strong>Música de fondo:</strong> “Floating Cities” – Kevin MacLeod (incompetech.com)</p>
-  <p>
-    Licencia: 
-    <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">
-      Creative Commons Attribution 4.0
-    </a>
-  </p>
-</footer>
-
+  <!-- ✅ Sonido de pasar página -->
   <audio id="page-sound" src="sounds/page.mp3" preload="auto"></audio>
-<audio id="bg-music" src="sounds/Floating Cities.mp3" loop preload="auto"></audio>
 
-  <!-- ✅ JS del cuento -->
+  <!-- ✅ Música de fondo -->
+  <audio id="bg-music" src="sounds/funny-party.mp3" preload="auto" loop></audio>
+
+  <!-- ✅ JS del cuento (SOLO UNA VEZ) -->
   <script src="stories/cuento1.js"></script>
 
-  <!-- ✅ JS de la portada -->
-  <script src="scripts/cover.js"></script>
+  <!-- ✅ JS de la portada (SOLO UNA VEZ) -->
 <script>
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-      navigator.serviceWorker.register('./service-worker.js')
-        .then(reg => console.log('Service Worker registrado', reg))
-        .catch(err => console.error('Error al registrar SW', err));
-    });
-  }
-</script>
+  (function () {
+    const cover = document.getElementById("cover");
+    const book = document.getElementById("book");
 
+    const btnStart = document.getElementById("btn-start");
+    const btnReset = document.getElementById("btn-reset");
+
+    const bgMusic = document.getElementById("bg-music");
+    const resetMsg = document.getElementById("reset-msg");
+
+    // Audios de portada
+    const btnCoverEs = document.getElementById("btn-cover-audio-es");
+    const btnCoverEn = document.getElementById("btn-cover-audio-en");
+    const coverAudioEs = document.getElementById("cover-audio-es");
+    const coverAudioEn = document.getElementById("cover-audio-en");
+
+    function actualizarTextoStart() {
+      const savedPage = localStorage.getItem("paginaActual");
+      const n = savedPage === null ? 0 : parseInt(savedPage, 10);
+      btnStart.textContent = n > 0 ? "📖 Continuar leyendo" : "📖 Empezar a leer";
+    }
+
+    function dispatchOpenBook() {
+      // Compatibilidad con cuento1.js (si escucha este evento)
+      window.dispatchEvent(new Event("openBook"));
+    }
+
+    function dispatchCloseBook() {
+      window.dispatchEvent(new Event("closeBook"));
+    }
+
+    function detenerAudiosPortada() {
+      if (coverAudioEs) { coverAudioEs.pause(); coverAudioEs.currentTime = 0; }
+      if (coverAudioEn) { coverAudioEn.pause(); coverAudioEn.currentTime = 0; }
+    }
+
+    // volumen suave
+    if (bgMusic) bgMusic.volume = 0.12;
+
+    // Texto inicial correcto
+    actualizarTextoStart();
+
+  // Abrir libro
+btnStart.addEventListener("click", () => {
+  cover.classList.add("hidden");
+  book.classList.remove("hidden");
+  window.scrollTo({ top: 0, behavior: "smooth" });
+
+  detenerAudiosPortada();
+
+  // ✅ SIEMPRE encender música al abrir (ANTES del evento)
+  localStorage.setItem("bgMusic", "on");
+
+  // avisar al cuento
+  dispatchOpenBook();
+
+  // ✅ iniciar música desde el click
+  if (window.startMusic) window.startMusic();
+});
+
+    // Volver a portada (para cuento1.js)
+    function volverAPortada() {
+      book.classList.add("hidden");
+      cover.classList.remove("hidden");
+      window.scrollTo({ top: 0, behavior: "smooth" });
+
+      if (bgMusic) {
+        bgMusic.pause();
+        bgMusic.currentTime = 0;
+      }
+
+      // avisar cierre (si lo quieres manejar en cuento1.js)
+      dispatchCloseBook();
+
+      // recalcula el texto del botón
+      actualizarTextoStart();
+    }
+    window.volverAPortada = volverAPortada;
+
+    // ✅ Reiniciar progreso
+    if (btnReset) {
+      btnReset.addEventListener("click", () => {
+        // Forzar inicio
+        localStorage.setItem("paginaActual", "0");
+        localStorage.setItem("modoIdioma", "both");
+
+        // detener música
+        if (bgMusic) {
+          bgMusic.pause();
+          bgMusic.currentTime = 0;
+        }
+
+        // detener audios de portada
+        detenerAudiosPortada();
+
+        // UI inmediata
+        btnStart.textContent = "📖 Empezar a leer";
+
+        if (resetMsg) {
+          resetMsg.textContent = "✅ Progreso reiniciado. Puedes empezar desde el inicio.";
+          setTimeout(() => (resetMsg.textContent = ""), 2500);
+        }
+
+        // volver a portada (aunque ya estés en portada no pasa nada)
+        volverAPortada();
+      });
+    }
+
+    // ✅ Audio portada ES/EN
+    if (btnCoverEs && coverAudioEs) {
+      btnCoverEs.addEventListener("click", () => {
+        if (!coverAudioEs.paused) {
+          coverAudioEs.pause();
+          coverAudioEs.currentTime = 0;
+          return;
+        }
+        if (coverAudioEn) { coverAudioEn.pause(); coverAudioEn.currentTime = 0; }
+        coverAudioEs.currentTime = 0;
+        coverAudioEs.play().catch(() => {});
+      });
+    }
+
+    if (btnCoverEn && coverAudioEn) {
+      btnCoverEn.addEventListener("click", () => {
+        if (!coverAudioEn.paused) {
+          coverAudioEn.pause();
+          coverAudioEn.currentTime = 0;
+          return;
+        }
+        if (coverAudioEs) { coverAudioEs.pause(); coverAudioEs.currentTime = 0; }
+        coverAudioEn.currentTime = 0;
+        coverAudioEn.play().catch(() => {});
+      });
+    }
+  })();
+</script>
 </body>
 </html>
 

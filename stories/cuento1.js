@@ -8,16 +8,15 @@ const paginas = [
       "On a quiet afternoon, the sky seemed like a soft blanket. " +
       "Very high above, where the clouds turn into cotton, " +
       "a group of little angels gathered to play. " +
-      "They laughed softly so as not to scare the birds, " +
+      "They laughed softly so as not to scare the little birds, " +
       "and their laughter sounded like little bells.",
     texto_es:
       "En una tarde tranquila, el cielo parecía una manta suave. " +
       "Muy arriba, donde las nubes se vuelven algodón, un grupo de " +
       "angelitos se reunió para jugar. Reían bajito para no asustar " +
-      "a los pájaros, y sus risas sonaban como campanitas.",
-audio_es: "sounds/page1_es.mp3",
-audio_en: "sounds/page1_en.mp3"
-
+      "a los pajaritos, y sus risas sonaban como campanitas.",
+    audio_es: "sounds/page1_es.mp3",
+    audio_en: "sounds/page1_en.mp3",
   },
   {
     titulo: "Página 2",
@@ -30,8 +29,8 @@ audio_en: "sounds/page1_en.mp3"
       "Uno de ellos se llamaba Luz. Tenía una pluma brillante " +
       "guardada en su bolsillo. —Hoy vamos a jugar a la pluma viajera — " +
       "dijo. El juego era simple: soplar la pluma suavemente para que volara sin caer.",
-audio_es: "sounds/page2_es.mp3",
-audio_en: "sounds/page2_en.mp3"
+    audio_es: "sounds/page2_es.mp3",
+    audio_en: "sounds/page2_en.mp3",
   },
   {
     titulo: "Página 3",
@@ -44,8 +43,8 @@ audio_en: "sounds/page2_en.mp3"
       "La pluma subía, giraba, bailaba… y todos aplaudían con alegría. " +
       "De pronto, una ráfaga de viento fuerte apareció ¡zas! " +
       "La pluma salió disparada. —¡Nooo!— gritaron los angelitos, viendo cómo se alejaba.",
-audio_es: "sounds/page3_es.mp3",
-audio_en: "sounds/page3_en.mp3"
+    audio_es: "sounds/page3_es.mp3",
+    audio_en: "sounds/page3_en.mp3",
   },
   {
     titulo: "Página 4",
@@ -58,8 +57,8 @@ audio_en: "sounds/page3_en.mp3"
       "La pluma cayó muy lejos, atravesó nubes y rayos de sol, " +
       "hasta que llegó cerca de un pequeño pueblo en la Tierra. " +
       "Allí estaba una niña llamada Sofía, sentada en su ventana con cara triste.",
-audio_es: "sounds/page4_es.mp3",
-audio_en: "sounds/page4_en.mp3"
+    audio_es: "sounds/page4_es.mp3",
+    audio_en: "sounds/page4_en.mp3",
   },
   {
     titulo: "Página 5",
@@ -72,8 +71,8 @@ audio_en: "sounds/page4_en.mp3"
       "Sofía suspiró. —Hoy fue un día difícil… nadie quiso jugar conmigo. " +
       "En ese momento, la pluma bajó lentamente y cayó justo en su mano. " +
       "Sofía abrió los ojos sorprendida. —¿De dónde vienes tú?",
-audio_es: "sounds/page5_es.mp3",
-audio_en: "sounds/page5_en.mp3"
+    audio_es: "sounds/page5_es.mp3",
+    audio_en: "sounds/page5_en.mp3",
   },
   {
     titulo: "Página 6",
@@ -88,8 +87,8 @@ audio_en: "sounds/page5_en.mp3"
       "Sofía sonrió por primera vez ese día. " +
       "—Si tú llegaste hasta mí… quizás es porque todavía hay algo bonito esperándome. " +
       "—Quizás mañana será mejor —susurró, guardándola con cuidado.",
-audio_es: "sounds/page6_es.mp3",
-audio_en: "sounds/page6_en.mp3"
+    audio_es: "sounds/page6_es.mp3",
+    audio_en: "sounds/page6_en.mp3",
   },
   {
     titulo: "Página 7",
@@ -104,8 +103,8 @@ audio_en: "sounds/page6_en.mp3"
       "Vio a los angelitos buscando la pluma. " +
       "Luz la miró desde arriba y dijo: —No te preocupes, nunca estás sola. " +
       "Las cosas lindas siempre llegan donde hacen falta.",
-audio_es: "sounds/page7_es.mp3",
-audio_en: "sounds/page7_en.mp3"
+    audio_es: "sounds/page7_es.mp3",
+    audio_en: "sounds/page7_en.mp3",
   },
   {
     titulo: "Página 8",
@@ -120,8 +119,8 @@ audio_en: "sounds/page7_en.mp3"
       "Cuando la sacó, una niña se acercó, se sentó a su lado y dijo: " +
       "—¡Qué hermosa! ¿Puedo verla?— Sofía respiró profundo y respondió: " +
       "—Sí… pero con cuidado.— Y así empezó una conversación.",
-audio_es: "sounds/page8_es.mp3",
-audio_en: "sounds/page8_en.mp3"
+    audio_es: "sounds/page8_es.mp3",
+    audio_en: "sounds/page8_en.mp3",
   },
   {
     titulo: "Página 9",
@@ -136,8 +135,8 @@ audio_en: "sounds/page8_en.mp3"
       "la pluma viajera. La soplaban suave y todos reían. " +
       "Y Sofía entendió algo muy importante: a veces solo hace falta " +
       "un pequeño detalle para que el corazón se anime.",
-audio_es: "sounds/page9_es.mp3",
-audio_en: "sounds/page9_en.mp3"
+    audio_es: "sounds/page9_es.mp3",
+    audio_en: "sounds/page9_en.mp3",
   },
   {
     titulo: "Página 10",
@@ -154,20 +153,21 @@ audio_en: "sounds/page9_en.mp3"
       "Y en el viento quedó un mensaje invisible: “Nunca estás sola”. " +
       "Siempre hay magia cerca de ti. Sofía supo que los ángeles seguían jugando, " +
       "y aunque no los viera, siempre estarían cerca de ella.",
-audio_es: "sounds/page10_es.mp3",
-audio_en: "sounds/page10_en.mp3"
+    audio_es: "sounds/page10_es.mp3",
+    audio_en: "sounds/page10_en.mp3",
   },
-{
-  titulo: "Fin del cuento",
-  imagen: "images/page11.jpg",
-  texto_en:
-  "The End. Thank you for reading this story. We hope you enjoyed the adventure of the little angels.",
-  texto_es: 
-  "Fin. Gracias por leer este cuento. Esperamos que hayas disfrutado la aventura de los angelitos.",
-audio_es: "sounds/page11_es.mp3",
-audio_en: "sounds/page11_en.mp3"
-}
+  {
+    titulo: "Fin del cuento",
+    imagen: "images/page11.jpg",
+    texto_en:
+      "The End. Thank you for reading this story. We hope you enjoyed the adventure of the little angels.",
+    texto_es:
+      "Fin. Gracias por leer este cuento. Esperamos que hayas disfrutado la aventura de los angelitos.",
+    audio_es: "sounds/page11_es.mp3",
+    audio_en: "sounds/page11_en.mp3",
+  },
 ];
+
 let paginaActual = 0;
 let modoIdioma = "both"; // "both" | "en" | "es"
 
@@ -184,61 +184,17 @@ const btnNext = document.getElementById("btn-next");
 const btnBoth = document.getElementById("btn-both");
 const btnEn = document.getElementById("btn-en");
 const btnEs = document.getElementById("btn-es");
+
 const btnAudio = document.getElementById("btn-audio");
 const audioPlayer = new Audio();
-// 🎵 Música de fondo
-const bgMusic = document.getElementById("bg-music");
-const btnMusic = document.getElementById("btn-music");
-
-let musicaSonando = false;
-
-function actualizarBotonMusica() {
-  if (!btnMusic) return;
-  btnMusic.textContent = musicaSonando ? "⏸️ Pausar música" : "🎵 Música";
-}
-
-function reproducirMusica() {
-  if (!bgMusic) return;
-  bgMusic.volume = 0.2; // suave
-  bgMusic.play().then(() => {
-    musicaSonando = true;
-    actualizarBotonMusica();
-    localStorage.setItem("bgMusic", "on");
-  }).catch(() => {
-    // si el navegador bloquea, no hacemos nada
-    musicaSonando = false;
-    actualizarBotonMusica();
-  });
-}
-
-function pausarMusica() {
-  if (!bgMusic) return;
-  bgMusic.pause();
-  musicaSonando = false;
-  actualizarBotonMusica();
-  localStorage.setItem("bgMusic", "off");
-}
-
-// Click del botón música
-if (btnMusic) {
-  btnMusic.addEventListener("click", () => {
-    if (musicaSonando) pausarMusica();
-    else reproducirMusica();
-  });
-}
-
-// Cuando se abre el libro (viene de cover.js), intentar iniciar música
-window.addEventListener("openBook", () => {
-  const pref = localStorage.getItem("bgMusic") || "on"; // por defecto ON
-  if (pref === "on") reproducirMusica();
-});
-
-// Estado inicial del botón
-actualizarBotonMusica();
-
 
 const pageIndicator = document.getElementById("page-indicator");
 const pageSound = document.getElementById("page-sound");
+
+// 🎵 Música de fondo
+const bgMusic = document.getElementById("bg-music");
+const btnMusic = document.getElementById("btn-music");
+let musicaSonando = false;
 
 function playPageSound() {
   if (!pageSound) return;
@@ -247,6 +203,7 @@ function playPageSound() {
     pageSound.play().catch(() => {});
   } catch (_) {}
 }
+
 function detenerAudio() {
   try {
     audioPlayer.pause();
@@ -254,16 +211,72 @@ function detenerAudio() {
   } catch (_) {}
 }
 
-function obtenerAudioDePagina(p) {
-  // 🌎 Si está en ambos idiomas, no hay audio
-  if (modoIdioma === "both") return null;
+function actualizarBotonMusica() {
+  if (!btnMusic) return;
+  btnMusic.textContent = musicaSonando ? "⏸️ Pausar música" : "🎵 Música";
+}
 
-  // 🇪🇸 o 🇺🇸 según modo
+// 🔁 Sincronizar estado real del audio con el botón de música
+if (bgMusic) {
+  bgMusic.addEventListener("play", () => {
+    musicaSonando = true;
+    actualizarBotonMusica();
+    localStorage.setItem("bgMusic", "on");
+  });
+
+  bgMusic.addEventListener("pause", () => {
+    musicaSonando = false;
+    actualizarBotonMusica();
+    localStorage.setItem("bgMusic", "off");
+  });
+
+  bgMusic.addEventListener("ended", () => {
+    musicaSonando = false;
+    actualizarBotonMusica();
+    localStorage.setItem("bgMusic", "off");
+  });
+}
+
+
+function reproducirMusica() {
+  if (!bgMusic) return;
+  bgMusic.volume = 0.12;
+
+  bgMusic.play().catch(() => {
+    // si el navegador bloquea el play, deja todo consistente
+    musicaSonando = false;
+    actualizarBotonMusica();
+    localStorage.setItem("bgMusic", "off");
+  });
+}
+// 🔊 Permite que la portada inicie la música con un click del usuario
+window.startMusic = () => {
+  if (!bgMusic) return;
+  if (!bgMusic.paused) return; // si ya está sonando, no reiniciar
+  reproducirMusica();
+};
+
+
+function pausarMusica() {
+  if (!bgMusic) return;
+  bgMusic.pause();
+  localStorage.setItem("bgMusic", "off");
+}
+
+if (btnMusic) {
+  btnMusic.addEventListener("click", () => {
+    if (musicaSonando) pausarMusica();
+    else reproducirMusica();
+  });
+}
+
+function obtenerAudioDePagina(p) {
+  if (modoIdioma === "both") return null;
   if (modoIdioma === "es") return p.audio_es || null;
   if (modoIdioma === "en") return p.audio_en || null;
-
   return null;
 }
+
 let audioSonando = false;
 
 function actualizarBotonAudio() {
@@ -283,7 +296,6 @@ function reproducirAudioDePaginaActual() {
   const p = paginas[paginaActual];
   const src = obtenerAudioDePagina(p);
 
-  // Si no hay audio o está en BOTH, no hacemos nada
   if (!src) {
     detenerAudio();
     audioSonando = false;
@@ -291,7 +303,6 @@ function reproducirAudioDePaginaActual() {
     return;
   }
 
-  // Cargar y reproducir
   try {
     audioPlayer.src = src;
     audioPlayer.currentTime = 0;
@@ -299,7 +310,6 @@ function reproducirAudioDePaginaActual() {
       audioSonando = true;
       actualizarBotonAudio();
     }).catch(() => {
-      // Si el navegador bloquea, no hacemos nada
       audioSonando = false;
       actualizarBotonAudio();
     });
@@ -321,37 +331,28 @@ function toggleAudio() {
   }
 }
 
-// Click en botón audio
-if (btnAudio) {
-  btnAudio.addEventListener("click", toggleAudio);
-}
+if (btnAudio) btnAudio.addEventListener("click", toggleAudio);
 
-// Cuando termine el audio, volvemos a estado normal
 audioPlayer.addEventListener("ended", () => {
   audioSonando = false;
   actualizarBotonAudio();
 });
 
-// Estado inicial del botón
-actualizarBotonAudio();
-
-
-
 function aplicarModoIdioma() {
   const hr = document.querySelector(".texto-bilingue hr");
 
   if (modoIdioma === "both") {
-    textoEnEl.style.display = "";
+    if (textoEnEl) textoEnEl.style.display = "";
     if (hr) hr.style.display = "";
-    textoEsEl.style.display = "";
+    if (textoEsEl) textoEsEl.style.display = "";
   } else if (modoIdioma === "en") {
-    textoEnEl.style.display = "";
+    if (textoEnEl) textoEnEl.style.display = "";
     if (hr) hr.style.display = "none";
-    textoEsEl.style.display = "none";
+    if (textoEsEl) textoEsEl.style.display = "none";
   } else {
-    textoEnEl.style.display = "none";
+    if (textoEnEl) textoEnEl.style.display = "none";
     if (hr) hr.style.display = "none";
-    textoEsEl.style.display = "";
+    if (textoEsEl) textoEsEl.style.display = "";
   }
 
   if (btnBoth && btnEn && btnEs) {
@@ -362,7 +363,7 @@ function aplicarModoIdioma() {
 
   localStorage.setItem("modoIdioma", modoIdioma);
 
-  // ✅ PASO 4: al cambiar idioma, detener audio y actualizar botón
+  // al cambiar idioma: detener audio y actualizar botón
   detenerAudio();
   audioSonando = false;
   actualizarBotonAudio();
@@ -371,7 +372,7 @@ function aplicarModoIdioma() {
 function renderPagina() {
   const p = paginas[paginaActual];
 
-  // ✅ detener audio cuando se cambia de página
+  // detener audio cuando se cambia de página
   detenerAudio();
   audioSonando = false;
   actualizarBotonAudio();
@@ -392,8 +393,6 @@ function renderPagina() {
     if (btnNext) btnNext.disabled = paginaActual === paginas.length - 1;
 
     aplicarModoIdioma();
-    audioSonando = false;
-    actualizarBotonAudio();
     localStorage.setItem("paginaActual", String(paginaActual));
 
     if (pageEl) {
@@ -402,6 +401,21 @@ function renderPagina() {
       setTimeout(() => pageEl.classList.remove("fade-in"), 300);
     }
   }, 150);
+}
+
+function cerrarLibro() {
+  if (typeof window.volverAPortada === "function") {
+    window.volverAPortada();
+  } else {
+    // fallback mínimo por si no existe
+    const cover = document.getElementById("cover");
+    const book = document.getElementById("book");
+    if (cover && book) {
+      book.classList.add("hidden");
+      cover.classList.remove("hidden");
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  }
 }
 
 // Navegación
@@ -418,16 +432,9 @@ if (btnNext) {
 if (btnPrev) {
   btnPrev.addEventListener("click", () => {
     if (paginaActual === 0) {
-      const cover = document.getElementById("cover");
-      const book = document.getElementById("book");
-      if (cover && book) {
-        book.classList.add("hidden");
-        cover.classList.remove("hidden");
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      }
+      cerrarLibro();
       return;
     }
-
     paginaActual--;
     playPageSound();
     renderPagina();
@@ -439,7 +446,6 @@ if (btnBoth) btnBoth.addEventListener("click", () => { modoIdioma = "both"; apli
 if (btnEn) btnEn.addEventListener("click", () => { modoIdioma = "en"; aplicarModoIdioma(); });
 if (btnEs) btnEs.addEventListener("click", () => { modoIdioma = "es"; aplicarModoIdioma(); });
 
-// Progreso
 function cargarProgreso() {
   const savedPage = parseInt(localStorage.getItem("paginaActual") || "0", 10);
   const savedLang = localStorage.getItem("modoIdioma");
@@ -452,22 +458,33 @@ function cargarProgreso() {
   }
 }
 
-window.addEventListener("openBook", () => {
+// ===== Inicialización =====
+function initBookIfNeeded() {
+  const bookEl = document.getElementById("book");
+  if (!bookEl) return;
+  if (bookEl.classList.contains("hidden")) return;
+
   cargarProgreso();
   renderPagina();
+
+  // Solo sincroniza el texto del botón con el estado real del audio
+  musicaSonando = !!(bgMusic && !bgMusic.paused);
+actualizarBotonMusica();
+}
+
+
+// Estado inicial de botones
+actualizarBotonMusica();
+actualizarBotonAudio();
+
+document.addEventListener("DOMContentLoaded", () => {
+  initBookIfNeeded();
+
+  // También soporta el evento openBook (si la portada lo dispara)
+  window.addEventListener("openBook", initBookIfNeeded);
+ 
 });
 
-// Inicializar solo si el libro está visible
-const bookEl = document.getElementById("book");
-if (bookEl && !bookEl.classList.contains("hidden")) {
-  cargarProgreso();
-  renderPagina();
-} else {
-  const savedLang = localStorage.getItem("modoIdioma");
-  if (savedLang === "both" || savedLang === "en" || savedLang === "es") {
-    modoIdioma = savedLang;
-  }
-}
 // Controles por teclado (← →)
 document.addEventListener("keydown", (e) => {
   if (document.getElementById("book")?.classList.contains("hidden")) return;
@@ -480,21 +497,15 @@ document.addEventListener("keydown", (e) => {
 
   if (e.key === "ArrowLeft") {
     if (paginaActual === 0) {
-      const cover = document.getElementById("cover");
-      const book = document.getElementById("book");
-      if (cover && book) {
-        book.classList.add("hidden");
-        cover.classList.remove("hidden");
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      }
+      cerrarLibro();
       return;
     }
-
     paginaActual--;
     playPageSound();
     renderPagina();
   }
 });
+
 // Pantalla completa
 const btnFullscreen = document.getElementById("btn-fullscreen");
 
@@ -514,34 +525,27 @@ if (btnFullscreen) {
     }
   });
 
-  // Si el usuario sale con ESC, actualizamos el texto
   document.addEventListener("fullscreenchange", syncFullscreenButton);
-
-  // Texto inicial correcto
   syncFullscreenButton();
 }
+
 // ====== MODO OSCURO ======
 const btnTheme = document.getElementById("btn-theme");
 
 function applyTheme(isDark) {
   document.body.classList.toggle("dark", isDark);
-  if (btnTheme) {
-    btnTheme.textContent = isDark ? "☀️ Modo claro" : "🌙 Modo oscuro";
-  }
+  if (btnTheme) btnTheme.textContent = isDark ? "☀️ Modo claro" : "🌙 Modo oscuro";
   localStorage.setItem("theme", isDark ? "dark" : "light");
 }
 
-// Cargar tema guardado al iniciar
-const savedTheme = localStorage.getItem("theme");
-applyTheme(savedTheme === "dark");
+applyTheme(localStorage.getItem("theme") === "dark");
 
-// Toggle al hacer click
 if (btnTheme) {
   btnTheme.addEventListener("click", () => {
-    const isDark = document.body.classList.contains("dark");
-    applyTheme(!isDark);
+    applyTheme(!document.body.classList.contains("dark"));
   });
 }
+
 // ====== SWIPE EN MÓVIL ======
 let touchStartX = 0;
 let touchStartY = 0;
@@ -564,14 +568,11 @@ document.addEventListener("touchend", (e) => {
   const dx = endX - touchStartX;
   const dy = endY - touchStartY;
 
-  // Evita activar swipe si fue más vertical que horizontal
   if (Math.abs(dy) > Math.abs(dx)) return;
 
-  // Mínimo desplazamiento para considerarlo swipe
   const SWIPE_MIN = 50;
 
   if (dx <= -SWIPE_MIN) {
-    // Swipe izquierda => siguiente
     if (paginaActual < paginas.length - 1) {
       paginaActual++;
       playPageSound();
@@ -580,21 +581,18 @@ document.addEventListener("touchend", (e) => {
   }
 
   if (dx >= SWIPE_MIN) {
-    // Swipe derecha => anterior
     if (paginaActual === 0) {
-      const cover = document.getElementById("cover");
-      const book = document.getElementById("book");
-      if (cover && book) {
-        book.classList.add("hidden");
-        cover.classList.remove("hidden");
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      }
+      cerrarLibro();
       return;
     }
-
     paginaActual--;
     playPageSound();
     renderPagina();
   }
 }, { passive: true });
+
+// Fin de cuento1.js
+
+
+
 
