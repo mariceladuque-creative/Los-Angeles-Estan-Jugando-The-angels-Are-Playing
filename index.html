@@ -100,24 +100,29 @@
   </div>
 
   <!-- ✅ CRÉDITOS -->
-  <footer class="credits">
-    <p><strong>Autora:</strong> Maricela Duque</p>
-    <p><strong>Ilustraciones:</strong> creadas con ayuda de IA a partir de fotografías de la autora.</p>
-    <p class="copyright">© 2026 Maricela Duque. Todos los derechos reservados.</p>
-    <p><strong>Música de fondo:</strong> “Fiesta Divertida” – FiftySounds</p>
+<footer class="credits">
+  <p><strong>Autora:</strong> Maricela Duque</p>
+  <p><strong>Ilustraciones:</strong> creadas con ayuda de IA a partir de fotografías de la autora.</p>
+  <p class="copyright">© 2026 Maricela Duque. Todos los derechos reservados.</p>
+
+ <p><strong>Música de fondo:</strong> Obra: “Fiesta Divertida” – FiftySounds</p>
 <p>
   Música de:
-  <a href="https://www.fiftysounds.com/es/musica-libre-de-derechos/fiesta-divertida.html" target="_blank" rel="noopener noreferrer">
-    FiftySounds – Fiesta Divertida
+  <a href="https://www.fiftysounds.com/es/" target="_blank" rel="noopener noreferrer">
+    https://www.fiftysounds.com/es/
   </a>
 </p>
-  </footer>
-
+</footer>
   <!-- ✅ Sonido de pasar página -->
-  <audio id="page-sound" src="sounds/page.mp3" preload="auto"></audio>
+<audio id="page-sound" src="sounds/page.mp3" preload="auto"></audio>
 
-  <!-- ✅ Música de fondo -->
-  <audio id="bg-music" src="sounds/funny-party.mp3" preload="auto" loop></audio>
+<!-- ✅ Voz por página (EN/ES) -->
+<audio id="page-voice" preload="auto"></audio>
+
+<!-- ✅ Música de fondo -->
+<audio id="bg-music" preload="auto" loop>
+  <source src="sounds/funny-party.mp3" type="audio/mpeg">
+</audio>
 
   <!-- ✅ JS del cuento (SOLO UNA VEZ) -->
   <script src="stories/cuento1.js"></script>
@@ -257,6 +262,37 @@ btnStart.addEventListener("click", () => {
         coverAudioEn.currentTime = 0;
         coverAudioEn.play().catch(() => {});
       });
+    }
+
+       // ====== Música (start/stop + botón toggle) ======
+    const btnMusic = document.getElementById("btn-music");
+
+    function updateMusicLabel() {
+      if (!btnMusic) return;
+      btnMusic.textContent = bgMusic && !bgMusic.paused ? "🎵 Música: ON" : "🎵 Música: OFF";
+    }
+
+    window.startMusic = function () {
+      if (!bgMusic) return;
+      bgMusic.volume = 0.12;
+      bgMusic.play().catch(() => {});
+      updateMusicLabel();
+    };
+
+    window.stopMusic = function () {
+      if (!bgMusic) return;
+      bgMusic.pause();
+      bgMusic.currentTime = 0;
+      updateMusicLabel();
+    };
+
+    if (btnMusic) {
+      btnMusic.addEventListener("click", () => {
+        if (!bgMusic) return;
+        if (bgMusic.paused) window.startMusic();
+        else window.stopMusic();
+      });
+      updateMusicLabel();
     }
   })();
 </script>
